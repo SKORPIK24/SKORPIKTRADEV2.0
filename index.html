@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKORPIK VALUE</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo">
+                        <i class="fas fa-chart-line"></i>
+                        <span>SKORPIK VALUE</span>
+                    </div>
+                    <div class="version-badge">v2.0</div>
+                </div>
+                
+                <nav class="main-nav">
+                    <div class="nav-tabs">
+                        <button class="nav-tab active" data-tab="items">
+                            <i class="fas fa-cube"></i>
+                            <span>Предметы</span>
+                        </button>
+                        <button class="nav-tab" data-tab="calculator">
+                            <i class="fas fa-calculator"></i>
+                            <span>Калькулятор</span>
+                        </button>
+                        <button class="nav-tab" data-tab="telegram">
+                            <i class="fab fa-telegram"></i>
+                            <span>Контакты</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="tab-content active" id="items-content">
+                <div class="content-header">
+                    <h1>Каталог предметы</h1>
+                    <p>Актуальные цены и статистика для торговли</p>
+                </div>
+
+                <div class="filters-section">
+                    <div class="filter-group">
+                        <label>Редкость:</label>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-rarity="all">Все</button>
+                            <button class="filter-btn divine" data-rarity="Divine">Божественные</button>
+                            <button class="filter-btn exclusive" data-rarity="Exclusive">Эксклюзивные</button>
+                            <button class="filter-btn pass" data-rarity="Pass">Пассы</button>
+                        </div>
+                    </div>
+                    
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Поиск предметов..." id="search-input">
+                    </div>
+                </div>
+
+                <div class="items-grid" id="items-grid">
+                </div>
+            </section>
+
+            <section class="tab-content" id="calculator-content">
+                <div class="content-header">
+                    <h1>Калькулятор обмена</h1>
+                    <p>Сравните стоимость предметов для выгодной сделки</p>
+                </div>
+
+                <div class="calculator-container">
+                    <div class="export-section">
+                        <button class="export-btn" id="export-trade">
+                            <i class="fas fa-camera"></i>
+                            Сохранить сделку
+                        </button>
+                        <span class="export-hint">Скачать изображение трейда 1920×1080</span>
+                    </div>
+
+                    <div class="trade-sections">
+                        <div class="trade-section">
+                            <h3 class="trade-title">Даю</h3>
+                            <div class="items-row" id="left-items">
+                                <div class="add-item-slot" data-panel="left">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="trade-section">
+                            <h3 class="trade-title">Получаю</h3>
+                            <div class="items-row" id="right-items">
+                                <div class="add-item-slot" data-panel="right">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trade-results">
+                        <div class="result-item">
+                            <span>Разница стоимости:</span>
+                            <strong id="value-difference">0</strong>
+                        </div>
+                        <div class="result-item">
+                            <span>Разница спроса:</span>
+                            <strong id="demand-difference">0</strong>
+                            <span class="demand-indicator" id="demand-status">=</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tab-content" id="telegram-content">
+                <div class="content-header">
+                    <h1>Telegram каналы</h1>
+                    <p>Подпишитесь на мои каналы, чтобы быть вкурсе всех новостей!</p>
+                </div>
+
+                <div class="telegram-cards">
+                    <div class="telegram-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <h3>Личный канал</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Мой личный Telegram канал с обновлениями, новостями и эксклюзивными материалами!</p>
+                            <ul class="channel-features">
+                                <li><i class="fas fa-check"></i> Актуальные цены</li>
+                                <li><i class="fas fa-check"></i> Торговые стратегии</li>
+                                <li><i class="fas fa-check"></i> Эксклюзивный контент</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/SSKORPIK" class="tg-link-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                                View
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="telegram-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>Канал о сайте</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Общественный Telegram канал, посвященный торговле в режиме Garden Tower Defense! Из-за которого я решил создать этот сайт.</p>
+                            <ul class="channel-features">
+                                <li><i class="fas fa-check"></i> Обновления сайта</li>
+                                <li><i class="fas fa-check"></i> Гайды по торговле</li>
+                                <li><i class="fas fa-check"></i> Советы и рекомендации</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://t.me/TIERLISTGARDENTD" class="tg-link-btn" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                                View
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div class="modal-overlay" id="items-modal">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <h3>Выберите предмет</h3>
+                    <button class="modal-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div class="modal-filters">
+                    <div class="filter-group">
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-rarity="all">Все</button>
+                            <button class="filter-btn divine" data-rarity="Divine">Божественные</button>
+                            <button class="filter-btn exclusive" data-rarity="Exclusive">Эксклюзивные</button>
+                            <button class="filter-btn pass" data-rarity="Pass">Пассы</button>
+                        </div>
+                    </div>
+                    
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Поиск..." id="modal-search">
+                    </div>
+                </div>
+
+                <div class="modal-items-grid" id="modal-items-grid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/items-data.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
