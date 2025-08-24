@@ -38,11 +38,12 @@ const itemsData = [
     { id: 37, name: "Electric Beetroot", rarity: "Exclusive", value: 3000, status: "Big Rising", demand: 8, image: "images/Electric Beetroot.png" },
     { id: 38, name: "Glass Bamboo", rarity: "Exclusive", value: 400, status: "Stable", demand: 3, image: "images/Glass Bamboo.png" },
     { id: 39, name: "Golem", rarity: "Exclusive", value: 500, status: "Rising", demand: 7, image: "images/Golem.png" },
-    { id: 40, name: "X2 Seeds Gift", rarity: "Pass", value: 1000, status: "Stable", demand: -, image: "images/x2 Seeds GIFT.png" },
-    { id: 41, name: "X3 Speed Gift", rarity: "Pass", value: 850, status: "Stable", demand: -, image: "images/x3 Game Speed Gift.png" },
-    { id: 42, name: "VIP Gift", rarity: "Pass", value: 625, status: "Stable", demand: -, image: "images/VIP GIFT.png" }
+    { id: 40, name: "X2 Seeds Gift", rarity: "Pass", value: 1000, status: "Stable", demand: 0, image: "images/x2 Seeds GIFT.png" },
+    { id: 41, name: "X3 Speed Gift", rarity: "Pass", value: 850, status: "Stable", demand: 0, image: "images/x3 Game Speed Gift.png" },
+    { id: 42, name: "VIP Gift", rarity: "Pass", value: 625, status: "Stable", demand: 0, image: "images/VIP GIFT.png" }
     { id: 43, name: "Earth Dragon", rarity: "Exclusive", value: 925, status: "Stable", demand: 8, image: "images/Earth Dragon.png" },
     { id: 44, name: "Voltshade", rarity: "Exclusive", value: 1200, status: "Stable", demand: 6, image: "images/Voltshade.png" },
 
 ];
+
 
