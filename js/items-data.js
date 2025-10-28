@@ -43,8 +43,8 @@ const itemsData = [
     { id: 42, name: "VIP Gift", rarity: "Pass", value: 625, status: "Stable", demand: 0, image: "images/VIP GIFT.png" },
     { id: 43, name: "Earth Dragon", rarity: "Exclusive", value: 725, status: "Stable", demand: 8, image: "images/Earth Dragon.png" },
     { id: 44, name: "Voltshade", rarity: "Exclusive", value: 275, status: "Stable", demand: 6, image: "images/Voltshade.png" },
-    { id: 45, name: "GAY", rarity: "Exclusive", value: 275, status: "Stable", demand: 6, image: "images/Voltshade.png" },
 ];
+
 
 
 
